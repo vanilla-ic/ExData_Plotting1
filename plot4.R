@@ -30,7 +30,7 @@ lines(dt$datetime, dt$Sub_metering_2,
       type ="l", col = "red")
 lines(dt$datetime, dt$Sub_metering_3,
       type = "l", col = "blue")
-legend("topright", lty=c(1,1,1),cex=.6,pt.cex = 1,col = c("black","blue", "red"), legend = c("Sub_metering_1", "Sub_metering_2", "Sub_metering_3"))
+legend("topright", bty='n', lty=c(1,1,1),cex=.7,pt.cex = 1,col = c("black","blue", "red"), legend = c("Sub_metering_1", "Sub_metering_2", "Sub_metering_3"))
 
 #plot4
 plot(dt$datetime, dt$Global_reactive_power, type = "l", xlab = "datetime", 
